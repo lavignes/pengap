@@ -38,6 +38,9 @@ Window:
 ```javascript
 // Resize window
 pengap.window.resize({width: 400, height: 200});
+
+// Move window (Bottom left is x:0 and y:0)
+pengap.window.move({x:0, y: 200});
 ```
 
 Notice:

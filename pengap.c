@@ -149,6 +149,24 @@ gboolean message_recieved(WebKitWebView* view, gchar* message, gint line,
         }
         break;
 
+        case PENGAP_MOVE: {
+
+          char* data = strstr(message, "[");
+
+          GKeyFile* object = g_key_file_new();
+          g_key_file_load_from_data(object, data, -1, G_KEY_FILE_NONE, NULL);
+
+          gint x = g_key_file_get_integer(object, "move", "x", NULL);
+          gint y = g_key_file_get_integer(object, "move", "y", NULL);
+
+          gtk_window_move(GTK_WINDOW(window_main), x, y);
+
+          g_key_file_free(object);
+          return TRUE;
+
+        }
+        break;
+
         default: return FALSE; break;
       }
 
