@@ -12,7 +12,7 @@ PenGap should work on any gnome-based desktop environment. (Gnome 2/3, Unity, Pa
 
 ## API
 PenGap exposes an object called `pengap` inside JavaScript. The API is so similar to MacGap, one can
-really just rename the pengap object in pengap.js to macgap, and their previously made macgap app is magially cross-platform. 
+really just rename the pengap object in pengap.js to macgap, and their previously made macgap app is magically cross-platform. 
 
 App:
 
