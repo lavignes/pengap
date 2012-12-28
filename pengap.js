@@ -26,12 +26,12 @@ pengap.window = {
 
   resize: function(msg) {
 
-    console.log("pengap 1 0 [resize]\nwidth=" + msg.width + "\nheight=" + msg.height);
-  }
+    console.log("pengap 1 0 [resize]\nwidth=" + msg.width + "\nheight=" + msg.height)
+  },
 
   move: function(msg) {
 
-    console.log("pengap 1 1 [move]\x=" + msg.x + "\ny=" + msg.y);
+    console.log("pengap 1 1 [move]\x=" + msg.x + "\ny=" + msg.y)
   }
 }
 
